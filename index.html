@@ -68,6 +68,25 @@
         a {
             color: var(--primary);
         }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 1.4rem;
+        }
     </style>
 </head>
 
@@ -76,22 +95,35 @@
     <header>
         <img src="https://sarva.yuddhaa.com/icons/icon.png" alt="Sarva Logo" class="logo">
         <h1>Sarva: Secure Offline Suite</h1>
-        <p>Total Data Sovereignty. 100% Offline. Biometric Security.</p>
+        <p>Essential daily tools you never knew you needed, all under one banner.</p>
     </header>
 
     <div class="container">
         <div class="card">
-            <h2>Me Docs</h2>
-            <p>A private, biometric-locked vault for organizing sensitive physical documents like IDs and legal papers
-                locally on your device without any cloud exposure.</p>
+            <div class="card-header">
+                <img src="https://sarva.yuddhaa.com/icons/meDocs.png" alt="Me Docs" class="card-icon">
+                <h2>Me Docs</h2>
+            </div>
+            <p>
+                A high-speed organizational vault for personal and work documents.
+                Leveraging native system sandboxing, your files are stored in a
+                completely isolated environment on your device—100% offline with zero cloud exposure
+                for maximum privacy and rapid access.
+            </p>
         </div>
 
         <div class="card">
-            <h2>Password Store</h2>
-            <p>An AES-encrypted manager to store and generate complex credentials, ensuring your digital keys remain
-                strictly in your pocket.</p>
+            <div class="card-header">
+                <img src="https://sarva.yuddhaa.com/icons/pwd_store.png" alt="Password Store" class="card-icon">
+                <h2>Password Store</h2>
+            </div>
+            <p>
+                Never lose a password again with our biometric-protected manager.
+                Your credentials are saved in a local SQLite database using industry-standard
+                encryption. Operating completely offline, it ensures your digital keys stay
+                strictly on your device for secure and instant access.
+            </p>
         </div>
-
         <div class="card">
             <h2>Legal & Support</h2>
             <ul>
@@ -117,7 +149,7 @@
     </div>
 
     <div class="footer">
-        &copy; 2026 Varada Spices Pvt Ltd / Yuddhaa Team. All rights reserved.
+        &copy; 2026 Yuddhaa Team. All rights reserved.
     </div>
 
 </body>
